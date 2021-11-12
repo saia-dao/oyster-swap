@@ -44,7 +44,7 @@ export const AddToLiquidity = () => {
   });
 
   const executeAction = !connected
-    ? wallet.connect
+    ? wallet?.connect
     : async () => {
       if (A.account && B.account && A.mint && B.mint) {
         setPendingTx(true);

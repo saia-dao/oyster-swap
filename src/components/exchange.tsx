@@ -30,6 +30,7 @@ export const ExchangeView = (props: {}) => {
 
   const [activeTab, setActiveTab] = useState(tabList[0].key);
 
+  // @ts-ignore
   const TopBar = (
     <div className="App-Bar">
       <div className="App-Bar-left">
@@ -60,7 +61,7 @@ export const ExchangeView = (props: {}) => {
             <Button
               type="text"
               size="large"
-              onClick={connected ? wallet.disconnect : wallet.connect}
+              onClick={connected ? wallet?.disconnect : wallet?.connect}
               style={{ color: "#2abdd2" }}
             >
               Connect
@@ -71,7 +72,7 @@ export const ExchangeView = (props: {}) => {
               placement="bottomRight"
               title="Wallet public key"
               trigger="click"
-            ></Popover>
+            />
           )}
         </div>
         {
