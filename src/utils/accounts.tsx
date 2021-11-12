@@ -231,7 +231,7 @@ export function AccountsProvider({ children = null as any }) {
     setUserAccounts(
       [
         // @ts-ignore
-        wrapNativeAccount(wallet.publicKey, nativeAccount),
+        wrapNativeAccount(wallet?.publicKey, nativeAccount),
         ...tokenAccounts,
       ].filter((a) => a !== undefined) as TokenAccount[]
     );

@@ -56,7 +56,7 @@ export const WALLET_PROVIDERS = [
     url: 'https://www.mathwallet.org',
     icon: `${ASSET_URL}/mathwallet.svg`,
     adapter: MathWalletAdapter,
-  },
+   },
 ];
 
 const WalletContext = React.createContext<null | WalletContextValues>(null);

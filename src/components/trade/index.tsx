@@ -71,6 +71,10 @@ export const TradeEntry = () => {
     }
   };
 
+  if (!wallet) {
+    return null;
+  }
+
   return (
     <>
       <div>
